@@ -12,7 +12,7 @@ angular.module('todoController', [])
 		if(!$.isEmptyObject($scope.formData)){
 			Todos.create($scope.formData).success(function(data){
 				$scope.formData = {};
-				$$scope.todos = data;
+				$scope.todos = data;
 			});
 		}
 	};
@@ -59,4 +59,4 @@ angular.module('todoController', [])
 				console.log("Error: " + data);
 			});
 	};*/
-};
+});
